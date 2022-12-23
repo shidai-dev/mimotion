@@ -43,7 +43,6 @@ def login(_user, password):
     else:
         url1 = "https://api-user.huami.com/registrations/+86" + _user + "/tokens"
         print("手机")
-    
     _headers = {
         "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
         "User-Agent": "MiFit/4.6.0 (iPhone; iOS 14.0.1; Scale/2.00)"
