@@ -322,9 +322,11 @@ def get_time():
     """
     获取时间戳
     """
-    url = 'http://api.m.taobao.com/rest/api3.do?api=mtop.common.getTimestamp'
+    # url = 'http://api.m.taobao.com/rest/api3.do?api=mtop.common.getTimestamp'
+    url = 'https://cube.meituan.com/ipromotion/cube/toc/component/base/getServerCurrentTime'
     response = requests.get(url, headers=headers).json()
-    t = response['data']['t']
+    # t = response['data']['t']
+    t = response['data']
     return t
 
 
